@@ -1,0 +1,16 @@
+
+START
+    DEFINE tax rates:
+        IF income < 500 THEN
+            taxRate = 10%
+        ELSE IF income >= 500 AND income < 1500 THEN
+            taxRate = 15%
+        ELSE IF income >= 1500 AND income < 2500 THEN
+            taxRate = 20%
+        ELSE IF income >= 2500 THEN
+            taxRate = 30%
+
+    GET weekly income from user
+    CALCULATE tax = weekly income * taxRate
+    DISPLAY the calculated tax
+END
