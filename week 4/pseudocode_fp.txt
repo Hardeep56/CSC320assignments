@@ -1,0 +1,26 @@
+
+START
+    DEFINE variables total, count, max, min, interest_rate
+    SET total to 0
+    SET count to 0
+    SET interest_rate to 0.20
+
+    WHILE count < 5
+        PROMPT user to enter a floating-point value
+        READ value
+        ADD value to total
+        INCREMENT count
+        IF count is 1 THEN
+            SET max to value
+            SET min to value
+        ELSE
+            IF value > max THEN
+                SET max to value
+            IF value < min THEN
+                SET min to value
+
+    CALCULATE average = total / 5
+    CALCULATE interest = total * interest_rate
+
+    DISPLAY total, average, max, min, and interest
+END
