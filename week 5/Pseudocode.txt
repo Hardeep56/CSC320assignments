@@ -1,0 +1,39 @@
+
+Pseudocode for Weekly Temperature Program
+
+1. Initialize ArrayLists:
+   - Create an ArrayList `days` to store days of the week.
+   - Create an ArrayList `temperatures` to store temperatures.
+
+2. Populate `days` ArrayList with:
+   - "Monday"
+   - "Tuesday"
+   - "Wednesday"
+   - "Thursday"
+   - "Friday"
+   - "Saturday"
+   - "Sunday"
+
+3. Input Loop:
+   - For each day in `days`:
+     - Prompt the user to enter the average temperature for the current day.
+     - Store the entered temperature in the `temperatures` ArrayList.
+
+4. User Query Loop:
+   - While true:
+     - Prompt the user to enter a day of the week or "week" to display the temperatures.
+     - If the user enters "week":
+       - Initialize `total` to 0.
+       - For each day and corresponding temperature:
+         - Display the day and its temperature.
+         - Add the temperature to `total`.
+       - Calculate `average` as `total` divided by the number of days.
+       - Display the weekly average temperature.
+       - Break the loop.
+     - Else if the user input is a valid day in the `days` ArrayList:
+       - Find the index of the input day.
+       - Display the temperature for the input day using the found index.
+     - Else:
+       - Display an error message indicating invalid input.
+
+5. End of program.
