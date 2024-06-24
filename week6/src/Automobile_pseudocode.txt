@@ -1,0 +1,22 @@
+
+// Pseudo Code for Automobile Class Methods
+
+// Method: start()
+// This method starts the automobile if it is not already running.
+If isRunning is false
+    Set isRunning to true
+    Return "The automobile has started."
+Else
+    Return "The automobile is already running."
+
+// Method: stop()
+// This method stops the automobile if it is currently running.
+If isRunning is true
+    Set isRunning to false
+    Return "The automobile has stopped."
+Else
+    Return "The automobile is not running."
+
+// Method: getDetails()
+// This method returns the details of the automobile.
+Return "Make: " + make + ", Model: " + model + ", Color: " + color + ", Year: " + year
